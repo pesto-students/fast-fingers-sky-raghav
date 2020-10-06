@@ -1,0 +1,26 @@
+.timer{
+  margin-top: 60%;
+}
+
+.inputWordRow {
+  margin-top: 10%;
+}
+
+.inputWordRow input {
+  display: block;
+  width: 100%;
+  padding: .6rem .75rem;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  opacity: 0.59;
+  margin-top:10%;
+}
+
+.inputWordRow input:focus {
+    outline: none !important;
+}

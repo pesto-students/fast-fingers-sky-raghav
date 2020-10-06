@@ -1,0 +1,99 @@
+$light-red: #ff5155;
+
+.gameIcon {
+  color: $light-red;
+  font-size: 8rem;
+}
+
+.gameTitle {
+  color: $light-red;
+  font-family: LaserCorpsGradient;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.gameConfig input {
+  display: block;
+  width: 100%;
+  padding: .6rem .75rem;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  opacity: 0.59;
+  margin-top:10%;
+}
+
+.gameConfig input:focus {
+    outline: none !important;
+}
+
+.gameConfig select {
+  display: inline-block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem 1.75rem .375rem .75rem;
+  line-height: 1.2;
+  color: #97a5a7;
+  vertical-align: middle;
+  background-color: transparent !important;
+  border: solid 1px #97a5a7;
+  border-radius: .25rem;
+  font-family: Breamcatcher;
+}
+
+.gameConfig select:focus {
+    outline: none !important;
+}
+
+.gameConfig select option:hover {
+    cursor: pointer;
+}
+
+.gameConfig select option {
+  box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
+  background-color: #9BA1A2;
+  color: #032228;
+  opacity: 0.59;
+
+}
+
+.gameConfig label, input {
+    display: block;
+}
+
+.gameConfig label {
+    margin-bottom: 20px;
+}
+
+.startGameButton {
+  color: $light-red;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.startGameButton .text{
+  display: inline;
+  padding-left: 6%;
+  font-family: Gotham;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+.startGameButton .icon{
+  font-size: 1.5rem;
+}
+
+.startGameButton .col-sm:hover {
+   cursor: pointer;
+}
