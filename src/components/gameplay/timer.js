@@ -29,7 +29,7 @@ class Timer extends Component {
   };
 
   startGameTimer = () => {
-    const interval = setInterval(() => {
+    setInterval(() => {
       this.setState({totalTime: this.state.totalTime + 1000});
     }, 1000);
   }

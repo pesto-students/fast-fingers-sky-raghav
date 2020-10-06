@@ -1,8 +1,6 @@
-import React, {Component}from 'react';
+import {Component}from 'react';
 import './scoreboard.scss';
 
-class Scoreboard extends Component {
-    return (
+class Scoreboard extends Component {}
 
-    );
-}
+export default Scoreboard;
