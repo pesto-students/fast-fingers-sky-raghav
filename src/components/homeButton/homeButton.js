@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import './homeButton.scss';
 
 class Homebutton extends Component {
-  constructor(props){
-    super(props);
-  }
   render(){
     return(
       <div className="container-fluid" >

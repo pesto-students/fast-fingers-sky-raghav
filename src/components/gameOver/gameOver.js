@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import './gameOver.scss';
 
 class Gameover extends Component {
-  constructor(props) {
-    super(props);
-  };
-
   render(){
     let lastScore = this.props.scoreboard[this.props.scoreboard.length - 1];
     return (

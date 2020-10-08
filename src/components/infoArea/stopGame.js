@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import './infoArea.scss';
 
 class Stopgame extends Component {
-  constructor(props) {
-    super(props);
-  };
-
   render(){
     return (
       <div className="container-fluid stop-game">
