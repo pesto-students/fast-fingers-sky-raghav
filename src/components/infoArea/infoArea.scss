@@ -1,0 +1,66 @@
+.infoArea{
+  height: 100%;
+}
+
+.userInfo{
+  height: 20vh;
+  font-family: Breamcatcher;
+}
+
+.userInfo i{
+  color: #ff5155;
+  font-size: 2rem;
+}
+
+.nameRow{
+  height: 50%;
+  margin-top: 5%;
+}
+
+.levelRow {
+  height: 50%;
+}
+
+.infoText{
+  color: #ff5155;
+  font-size: 1.2rem;
+  margin-left: 3%;
+}
+
+.scoreInfo {
+  height: 50vh;
+}
+
+.scoreboard {
+  border-radius: 15px;
+  border: 1px solid #ff5155;
+  color: #ff5155;
+  margin-right: 0px;
+  margin-left: 0px;
+  width : 50%;
+}
+
+.scores {
+  margin-top: 10%;
+  text-align: left;
+}
+
+.stop-game-button {
+  margin-top: 15%;
+  font-family: Gotham;
+}
+
+.stop-game-button :hover{
+  cursor: pointer;
+}
+
+.stop-game-button i{
+  color: #ff5155;
+  font-size: 2rem;
+}
+
+.stop-game-button label{
+  color: #ff5155;
+  font-size: 1.5rem;
+  margin-left: 3%;
+}

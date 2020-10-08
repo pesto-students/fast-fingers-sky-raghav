@@ -12,7 +12,7 @@ const GameConfig = (props) => {
         <div className="row gameTitle">
           <div className="col-sm">
             <h1>fast fingers</h1>
-            <h6>-------- the ultimate typing game --------</h6>
+            <label>---the ultimate typing game ---</label>
           </div>
         </div>
         <div className="row gameConfig">
@@ -24,9 +24,9 @@ const GameConfig = (props) => {
                 <label>
                   <select defaultValue={'DEFAULT'} onChange={props.setDifficultyHandler} required>
                     <option value="DEFAULT" disabled hidden>DIFFICULTY LEVEL</option>
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
+                    <option value="1">Easy</option>
+                    <option value="1.5">Medium</option>
+                    <option value="2">Hard</option>
                   </select>
                 </label>
             </form>

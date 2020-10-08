@@ -1,5 +1,10 @@
 $light-red: #ff5155;
 
+@font-face {
+  font-family: LaserCorpsGradient;
+  src: url('./Laser_Corps_Gradient/lasercorpsgrad.woff');
+}
+
 .gameIcon {
   color: $light-red;
   font-size: 8rem;
@@ -7,13 +12,22 @@ $light-red: #ff5155;
 
 .gameTitle {
   color: $light-red;
-  font-family: LaserCorpsGradient;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-align: left;
+  margin-left: 10%;
+}
+
+.gameTitle h1{
+  font-family: LaserCorpsGradient;
+  font-size: 2.1rem;
+}
+
+.gameTitle label {
+  margin-left: 6%;
 }
 
 .gameConfig input {

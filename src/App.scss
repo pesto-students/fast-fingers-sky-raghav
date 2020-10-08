@@ -18,6 +18,10 @@ html, body, .container-fluid {
   text-align: center;
 }
 
+.home {
+  height : 100vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -30,9 +34,7 @@ html, body, .container-fluid {
 }
 
 @media only screen and (max-width: 768px){
-  .home {
-    width: 80%;
-  }
+
 }
 
 .App-header {

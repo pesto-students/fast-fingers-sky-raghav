@@ -78,3 +78,7 @@ Zeplin App Link: zpl://project?pid=5f75f13621f33094313f2b94
   - Form Handling
 - Basic JavaScript(array and string methods)
 - How to use Local Storage/Session storage
+
+Live Demo : https://fast-fingers.netlify.app/
+
+(It is a work in progress though)

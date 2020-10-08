@@ -1,0 +1,25 @@
+.game-title {
+  height: 80%;
+}
+
+.game-title label{
+  color: #ff5155;
+  font-size: 2rem;
+  font-family: LaserCorpsGradient;
+}
+
+.home-button {
+  margin-top: 15%;
+  position: relative;
+}
+
+.home-button :hover{
+  cursor: pointer;
+}
+
+.home-button i{
+  color: #ff5155;
+  font-size: 2rem;
+  right: 0;
+  position: absolute;
+}

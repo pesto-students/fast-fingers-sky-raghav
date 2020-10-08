@@ -1,0 +1,27 @@
+.game-over-score label{
+  color: #ffff;
+  font-size: 2rem;
+  margin-left: 5%;
+  font-family: Gotham;
+}
+
+.play-again-button {
+  margin-left: 15%;
+  margin-top: 10%;
+  font-family: Gotham;
+}
+
+.play-again-button :hover{
+  cursor: pointer;
+}
+
+.play-again-button i{
+  color: #ff5155;
+  font-size: 2rem;
+}
+
+.play-again-button label{
+  color: #ff5155;
+  font-size: 1.2rem;
+  margin-left: 3%;
+}

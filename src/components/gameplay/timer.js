@@ -5,21 +5,23 @@ class Timer extends Component {
     super(props);
     this.radius = 60;
     this.circumference = 120 * Math.PI;
-    this.milliseconds = this.props.seconds * 1000;
+    this.milliseconds = parseInt(this.props.seconds).toFixed() * 1000;
     this.state = {
       countdown: this.milliseconds,
       isPlaying: false,
       totalTime : this.props.timerValue,
+      gameplay: this.props.gameplay
     };
     this.strokeDashoffset = () => this.circumference - (this.state.countdown / this.milliseconds) * this.circumference;
   }
-
+  gameTimerInterval = 0;
   startTimer = () => {
     this.setState({ isPlaying: true });
     const interval = setInterval(() => {
       this.setState({ countdown: this.state.countdown - 10});
       if (this.state.countdown === 0) {
         clearInterval(interval);
+        this.props.initiateGameOver();
         this.setState({
           countdown: this.milliseconds,
           isPlaying: false,
@@ -29,14 +31,30 @@ class Timer extends Component {
   };
 
   startGameTimer = () => {
-    setInterval(() => {
+    return setInterval(() => {
       this.setState({totalTime: this.state.totalTime + 1000});
     }, 1000);
   }
 
   componentDidMount(){
     this.startTimer();
-    this.startGameTimer();
+    this.gameTimerInterval = this.startGameTimer();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.seconds !== prevProps.seconds) {
+      this.milliseconds = parseInt(this.props.seconds).toFixed() * 1000;
+      this.setState({countdown: this.milliseconds});
+    }
+    if (this.props.seconds !== prevProps.seconds) {
+      this.milliseconds = parseInt(this.props.seconds).toFixed() * 1000;
+      this.setState({countdown: this.milliseconds});
+    }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.gameTimerInterval);
+    this.props.totalTimeTaken(new Date(this.state.totalTime).toISOString().substr(14, 5));
   }
 
   render() {
@@ -50,7 +68,7 @@ class Timer extends Component {
       fontSize: 120 * 0.3,
     };
 
-    const seconds = (this.state.totalTime/1000).toFixed();
+    const seconds = new Date(this.state.totalTime).toISOString().substr(14, 5);
 
     return (
       <div>
@@ -66,7 +84,7 @@ class Timer extends Component {
             {},
             styles.countdownContainer,
             countdownSizeStyles
-          )} onClick={!this.state.isPlaying ? this.startTimer : () => {}}
+          )}
         >
           <p style={textStyles}>{seconds}</p>
           <svg style={styles.svg}>

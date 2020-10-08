@@ -1,9 +1,15 @@
+@font-face {
+  font-family: Gotham;
+  src: url('../../assets/gotham.woff');
+}
+
 .timer{
   margin-top: 60%;
 }
 
 .inputWordRow {
   margin-top: 10%;
+  font-family: Gotham;
 }
 
 .inputWordRow input {
